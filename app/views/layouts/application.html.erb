@@ -12,8 +12,21 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
+    <div class="flex h-screen">
+      <!-- Sidebar -->
+      <div class="w-32 bg-gray-800 text-white">
+        <!-- Sidebar content goes here -->
+        <h1 class="ml-2 font-bold text-2xl">Vinyl</h1>
+        <ul>
+          <li><%= link_to "Home", root_path, class: "ml-2 mt-6 btn btn-sm btn-primary" %></li>
+          <li><%= link_to "Setup", setup_path, class: "ml-2 mt-2 btn btn-sm btn-primary" %></li>
+        </ul>
+      </div>
+      
+      <!-- Main Content -->
+      <div class="flex-grow">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
