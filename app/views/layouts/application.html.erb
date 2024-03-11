@@ -6,11 +6,9 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
     <div class="flex h-screen">
       <!-- Sidebar -->
@@ -20,9 +18,10 @@
         <ul>
           <li><%= link_to "Home", root_path, class: "ml-2 mt-6 btn btn-sm btn-primary" %></li>
           <li><%= link_to "Setup", setup_path, class: "ml-2 mt-2 btn btn-sm btn-primary" %></li>
+          <li><%= link_to "Artists", artists_path, class: "ml-2 mt-2 btn btn-sm btn-primary" %></li>
+          <li><%= link_to "Albums", albums_path, class: "ml-2 mt-2 btn btn-sm btn-primary" %></li>
         </ul>
       </div>
-      
       <!-- Main Content -->
       <div class="flex-grow">
         <%= yield %>
