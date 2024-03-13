@@ -14,12 +14,12 @@
       <!-- Sidebar -->
       <div class="h-screen sticky top-0 w-32 bg-gray-800 text-white">
         <!-- Sidebar content goes here -->
-        <h1 class="ml-2 font-bold text-2xl">Vinyl</h1>
-        <ul>
-          <li><%= link_to "Home", root_path, class: "ml-2 mt-6 btn btn-sm btn-primary" %></li>
-          <li><%= link_to "Setup", setup_path, class: "ml-2 mt-2 btn btn-sm btn-primary" %></li>
-          <li><%= link_to "Artists", artists_path, class: "ml-2 mt-2 btn btn-sm btn-primary" %></li>
-          <li><%= link_to "Albums", albums_path, class: "ml-2 mt-2 btn btn-sm btn-primary" %></li>
+        <h1 class="ml-4 mb-10 font-bold text-2xl">Vinyl</h1>
+        <ul class="menu">
+          <li><%= link_to "Home", root_path, class: current_path?(root_path) %></li>
+          <li><%= link_to "Setup", setup_path, class: current_path?(setup_path) %></li>
+          <li><%= link_to "Artists", artists_path, class: current_path?(artists_path) %></li>
+          <li><%= link_to "Albums", albums_path, class: current_path?(albums_path) %></li>
         </ul>
       </div>
       <!-- Main Content -->
