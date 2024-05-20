@@ -11,60 +11,61 @@
 
 puts 'adding artists to database'
 
-# Create artists
-the_anniversary = Artist.create(name: 'The Anniversary')
-julien_baker = Artist.create(name: 'Julien Baker')
-david_bowie = Artist.create(name: 'David Bowie')
-michael_buble = Artist.create(name: 'Michael Buble')
-as_cities_burn = Artist.create(name: 'As Cities Burn')
-tsac = Artist.create(name: 'The Sea And Cake')
-dashboard_confessional = Artist.create(name: 'Dashboard Confessional')
-green_day = Artist.create(name: 'Green Day')
-jeremy_enigk = Artist.create(name: 'Jeremy Enigk')
-sdre = Artist.create(name: 'Sunny Day Real Estate')
-fsf = Artist.create(name: 'Further Seems Forever')
-vince_guaraldi = Artist.create(name: 'Vince Guaraldi')
-ben_kweller = Artist.create(name: 'Ben Kweller')
-sam_prekop = Artist.create(name: 'Sam Prekop')
-radiohead = Artist.create(name: 'Radiohead')
-tortoise = Artist.create(name: 'Tortoise')
-soundtrack = Artist.create(name: 'Soundtrack')
-weezer = Artist.create(name: 'Weezer')
+# where artists
+the_anniversary = Artist.where(name: 'The Anniversary').first_or_create
+julien_baker = Artist.where(name: 'Julien Baker').first_or_create
+david_bowie = Artist.where(name: 'David Bowie').first_or_create
+michael_buble = Artist.where(name: 'Michael Buble').first_or_create
+as_cities_burn = Artist.where(name: 'As Cities Burn').first_or_create
+tsac = Artist.where(name: 'The Sea And Cake').first_or_create
+dashboard_confessional = Artist.where(name: 'Dashboard Confessional').first_or_create
+green_day = Artist.where(name: 'Green Day').first_or_create
+jeremy_enigk = Artist.where(name: 'Jeremy Enigk').first_or_create
+sdre = Artist.where(name: 'Sunny Day Real Estate').first_or_create
+fsf = Artist.where(name: 'Further Seems Forever').first_or_create
+vince_guaraldi = Artist.where(name: 'Vince Guaraldi').first_or_create
+ben_kweller = Artist.where(name: 'Ben Kweller').first_or_create
+sam_prekop = Artist.where(name: 'Sam Prekop').first_or_create
+radiohead = Artist.where(name: 'Radiohead').first_or_create
+tortoise = Artist.where(name: 'Tortoise').first_or_create
+soundtrack = Artist.where(name: 'Soundtrack').first_or_create
+weezer = Artist.where(name: 'Weezer').first_or_create
 
 puts 'adding albums to artists'
 
-# Create Albums
-the_anniversary.albums.create(title: 'Designing A Nervous Breakdown', release_date: Date.new(2000, 1, 25))
-the_anniversary.albums.create(title: 'Your Majesty', release_date: Date.new(2022, 1, 22))
-julien_baker.albums.create(title: 'Sprained Ankle', release_date: Date.new(2015, 10, 23))
-david_bowie.albums.create(title: 'Legacy', release_date: Date.new(2016, 11,11))
-david_bowie.albums.create(title: 'Labyrinth', release_date: Date.new(1986, 6, 23))
-michael_buble.albums.create(title: 'Christmas', release_date: Date.new(2011, 10, 14))
-as_cities_burn.albums.create(title: 'Come Now Sleep', release_date: Date.new(2007, 8, 14))
-tsac.albums.create(title: 'The Sea and Cake', release_date: Date.new(1994, 10, 20))
-tsac.albums.create(title: 'Nassau', release_date: Date.new(1995, 3, 27))
-tsac.albums.create(title: 'The Biz', release_date: Date.new(1995, 10, 10))
-tsac.albums.create(title: 'The Fawn', release_date: Date.new(1997, 3, 26))
-tsac.albums.create(title: 'Oui', release_date: Date.new(2000, 10, 3))
-tsac.albums.create(title: 'Everybody', release_date: Date.new(2007, 5, 8))
-dashboard_confessional.albums.create(title: 'The Swiss Army Romance', release_date: Date.new(2000, 3, 1))
-dashboard_confessional.albums.create(title: 'The Places You Have Come to Fear the Most', release_date: Date.new(2001, 3, 20))
-green_day.albums.create(title: 'Dookie', release_date: Date.new(1994, 2, 1))
-jeremy_enigk.albums.create(title: 'Return of the Frog Queen', release_date: Date.new(1996, 7, 23))
-sdre.albums.create(title: 'Diary', release_date: Date.new(1994, 5, 10))
-sdre.albums.create(title: 'LP2', release_date: Date.new(1995, 11, 7))
-sdre.albums.create(title: 'How It Feels To Be Something On', release_date: Date.new(1998, 9, 8))
-fsf.albums.create(title: 'The Moon Is Down', release_date: Date.new(2001, 3, 27))
-fsf.albums.create(title: 'How to Start A Fire', release_date: Date.new(2003, 2, 11))
-vince_guaraldi.albums.create(title: 'A Charlie Brown Christmas', release_date: Date.new(1965, 12, 1))
-ben_kweller.albums.create(title: 'Sha Sha', release_date: Date.new(2002, 3, 5))
-sam_prekop.albums.create(title: 'Sam Prekop', release_date: Date.new(1999, 2, 9))
-radiohead.albums.create(title: 'Kid A', release_date: Date.new(2000, 10, 2))
-radiohead.albums.create(title: 'In Rainbows', release_date: Date.new(2007, 10,10))
-tortoise.albums.create(title: 'TNT', release_date: Date.new(1998, 3, 10))
-tortoise.albums.create(title: 'Standards', release_date: Date.new(2001, 2, 20))
-tortoise.albums.create(title: "It's All Around You", release_date: Date.new(2004, 4, 6))
-soundtrack.albums.create(title: "Guardians of the Galaxy: Awesome Mix vol. 1", release_date: Date.new(2014, 8,1))
-weezer.albums.create(title: 'Blue Album', release_date: Date.new(1994, 5, 10))
+# where Albums
+the_anniversary.albums.where(title: 'Designing A Nervous Breakdown', release_date: Date.new(2000, 1, 25)).first_or_create
+the_anniversary.albums.where(title: 'Your Majesty', release_date: Date.new(2022, 1, 22)).first_or_create
+julien_baker.albums.where(title: 'Sprained Ankle', release_date: Date.new(2015, 10, 23)).first_or_create
+david_bowie.albums.where(title: 'Legacy', release_date: Date.new(2016, 11,11)).first_or_create
+david_bowie.albums.where(title: 'Labyrinth', release_date: Date.new(1986, 6, 23)).first_or_create
+michael_buble.albums.where(title: 'Christmas', release_date: Date.new(2011, 10, 14)).first_or_create
+as_cities_burn.albums.where(title: 'Come Now Sleep', release_date: Date.new(2007, 8, 14)).first_or_create
+tsac.albums.where(title: 'The Sea and Cake', release_date: Date.new(1994, 10, 20)).first_or_create
+tsac.albums.where(title: 'Nassau', release_date: Date.new(1995, 3, 27)).first_or_create
+tsac.albums.where(title: 'The Biz', release_date: Date.new(1995, 10, 10)).first_or_create
+tsac.albums.where(title: 'The Fawn', release_date: Date.new(1997, 3, 26)).first_or_create
+tsac.albums.where(title: 'Oui', release_date: Date.new(2000, 10, 3)).first_or_create
+tsac.albums.where(title: 'Everybody', release_date: Date.new(2007, 5, 8)).first_or_create
+dashboard_confessional.albums.where(title: 'The Swiss Army Romance', release_date: Date.new(2000, 3, 1)).first_or_create
+dashboard_confessional.albums.where(title: 'The Places You Have Come to Fear the Most', release_date: Date.new(2001, 3, 20)).first_or_create
+green_day.albums.where(title: 'Dookie', release_date: Date.new(1994, 2, 1)).first_or_create
+jeremy_enigk.albums.where(title: 'Return of the Frog Queen', release_date: Date.new(1996, 7, 23)).first_or_create
+sdre.albums.where(title: 'Diary', release_date: Date.new(1994, 5, 10)).first_or_create
+sdre.albums.where(title: 'LP2', release_date: Date.new(1995, 11, 7)).first_or_create
+sdre.albums.where(title: 'How It Feels To Be Something On', release_date: Date.new(1998, 9, 8)).first_or_create
+sdre.albums.where(title: 'Diary Live At London Bridge Studio', release_date: Date.new(2024, 5, 3))
+fsf.albums.where(title: 'The Moon Is Down', release_date: Date.new(2001, 3, 27)).first_or_create
+fsf.albums.where(title: 'How to Start A Fire', release_date: Date.new(2003, 2, 11)).first_or_create
+vince_guaraldi.albums.where(title: 'A Charlie Brown Christmas', release_date: Date.new(1965, 12, 1)).first_or_create
+ben_kweller.albums.where(title: 'Sha Sha', release_date: Date.new(2002, 3, 5)).first_or_create
+sam_prekop.albums.where(title: 'Sam Prekop', release_date: Date.new(1999, 2, 9)).first_or_create
+radiohead.albums.where(title: 'Kid A', release_date: Date.new(2000, 10, 2)).first_or_create
+radiohead.albums.where(title: 'In Rainbows', release_date: Date.new(2007, 10,10)).first_or_create
+tortoise.albums.where(title: 'TNT', release_date: Date.new(1998, 3, 10)).first_or_create
+tortoise.albums.where(title: 'Standards', release_date: Date.new(2001, 2, 20)).first_or_create
+tortoise.albums.where(title: "It's All Around You", release_date: Date.new(2004, 4, 6)).first_or_create
+soundtrack.albums.where(title: "Guardians of the Galaxy: Awesome Mix vol. 1", release_date: Date.new(2014, 8,1)).first_or_create
+weezer.albums.where(title: 'Blue Album', release_date: Date.new(1994, 5, 10)).first_or_create
 
 puts "Seed file ran."
