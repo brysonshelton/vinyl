@@ -1,0 +1,10 @@
+<h1 class="font-bold text-4xl text-center mb-8"><%= @artist.name %></h1>
+<div class="text-center">
+  <ul>
+    <% @albums.each do |album| %>
+      <li><%= album.title %></li>
+    <% end %>
+  </ul>
+  <div class="mt-4"><%= link_to 'To Artists', artists_path, class: "text-blue-500 hover:underline" %></div>
+  <div><%= link_to 'To Albums', albums_path, class: "text-blue-500 hover:underline" %></div>
+</div>
