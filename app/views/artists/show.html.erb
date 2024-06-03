@@ -2,7 +2,12 @@
 <div class="text-center">
   <ul>
     <% @albums.each do |album| %>
-      <li><%= album.title %></li>
+      <li class="text-fuchsia-500"><%= album.title %></li>
+      <% if album.cover.attached? %>
+        <%= image_tag url_for(album.cover), alt: "Cover Image for #{album.title}"%>
+      <% else %>
+        <p>No cover image available</p>
+      <% end %>
     <% end %>
   </ul>
   <div class="mt-4"><%= link_to 'To Artists', artists_path, class: "text-blue-500 hover:underline" %></div>

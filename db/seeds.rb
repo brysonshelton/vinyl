@@ -54,7 +54,7 @@ jeremy_enigk.albums.where(title: 'Return of the Frog Queen', release_date: Date.
 sdre.albums.where(title: 'Diary', release_date: Date.new(1994, 5, 10)).first_or_create
 sdre.albums.where(title: 'LP2', release_date: Date.new(1995, 11, 7)).first_or_create
 sdre.albums.where(title: 'How It Feels To Be Something On', release_date: Date.new(1998, 9, 8)).first_or_create
-sdre.albums.where(title: 'Diary Live At London Bridge Studio', release_date: Date.new(2024, 5, 3))
+sdre.albums.where(title: 'Diary: Live At London Bridge Studio', release_date: Date.new(2024, 5, 3)).first_or_create
 fsf.albums.where(title: 'The Moon Is Down', release_date: Date.new(2001, 3, 27)).first_or_create
 fsf.albums.where(title: 'How to Start A Fire', release_date: Date.new(2003, 2, 11)).first_or_create
 vince_guaraldi.albums.where(title: 'A Charlie Brown Christmas', release_date: Date.new(1965, 12, 1)).first_or_create
