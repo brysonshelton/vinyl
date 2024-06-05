@@ -3,7 +3,6 @@
   <ul>
     <% @albums.each do |album| %>
       <li>
-        <!-- <%= album.title %> -->
         <%= link_to album.title, artist_path(album.artist_id), class: "text-blue-500 hover:underline" %>
       </li>
     <% end %>
