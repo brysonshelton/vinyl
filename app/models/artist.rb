@@ -5,6 +5,6 @@ class Artist < ApplicationRecord
   has_many :albums
 
   def should_generate_new_friendly_id?
-    new_record? || name_changed?
+    name_changed? || slug.blank?
   end
 end
