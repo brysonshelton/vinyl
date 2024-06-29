@@ -5,9 +5,7 @@
       <li class="text-fuchsia-500"><%= album.title %></li>
       <% if album.cover_image.attached? %>
         <div class="flex justify-center mt-2 mb-4">
-          <!-- <%= image_tag url_for(album.cover_image_variant([300, 300])), alt: "Cover Image for #{album.title}"%> -->
-          <%= image_tag album.cover_image_url, alt: "Cover Image for #{album.title}", class: "mx-auto" %>
-
+          <%= image_tag album.cover_image_url, alt: "Cover Image for #{album.title}", class: "mx-auto w-[300px] h-[300px] object-cover" %>
         </div>
       <% else %>
         <p>No cover image available</p>
