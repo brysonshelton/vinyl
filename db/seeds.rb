@@ -14,6 +14,7 @@ puts 'adding artists to database'
 # where artists
 the_anniversary = Artist.where(name: 'The Anniversary').first_or_create
 julien_baker = Artist.where(name: 'Julien Baker').first_or_create
+boygenius = Artist.where(name: 'Boygenius').first_or_create
 david_bowie = Artist.where(name: 'David Bowie').first_or_create
 michael_buble = Artist.where(name: 'Michael Buble').first_or_create
 as_cities_burn = Artist.where(name: 'As Cities Burn').first_or_create
@@ -30,6 +31,7 @@ radiohead = Artist.where(name: 'Radiohead').first_or_create
 tortoise = Artist.where(name: 'Tortoise').first_or_create
 soundtrack = Artist.where(name: 'Soundtrack').first_or_create
 weezer = Artist.where(name: 'Weezer').first_or_create
+mariah_carey = Artist.where(name: 'Mariah Carey').first_or_create
 
 puts 'adding albums to artists'
 
@@ -37,6 +39,7 @@ puts 'adding albums to artists'
 the_anniversary.albums.where(title: 'Designing A Nervous Breakdown', release_date: Date.new(2000, 1, 25)).first_or_create
 the_anniversary.albums.where(title: 'Your Majesty', release_date: Date.new(2022, 1, 22)).first_or_create
 julien_baker.albums.where(title: 'Sprained Ankle', release_date: Date.new(2015, 10, 23)).first_or_create
+boygenius.albums.where(title: 'The Record', release_date: Date.new(2023, 03, 31)).first_or_create
 david_bowie.albums.where(title: 'Legacy', release_date: Date.new(2016, 11,11)).first_or_create
 david_bowie.albums.where(title: 'Labyrinth', release_date: Date.new(1986, 6, 23)).first_or_create
 michael_buble.albums.where(title: 'Christmas', release_date: Date.new(2011, 10, 14)).first_or_create
@@ -66,6 +69,8 @@ tortoise.albums.where(title: 'TNT', release_date: Date.new(1998, 3, 10)).first_o
 tortoise.albums.where(title: 'Standards', release_date: Date.new(2001, 2, 20)).first_or_create
 tortoise.albums.where(title: "It's All Around You", release_date: Date.new(2004, 4, 6)).first_or_create
 soundtrack.albums.where(title: "Guardians of the Galaxy: Awesome Mix vol. 1", release_date: Date.new(2014, 8,1)).first_or_create
+soundtrack.albums.where(title: "Deadpool & Wolverine", release_date: Date.new(2024, 7, 24)).first_or_create
 weezer.albums.where(title: 'Blue Album', release_date: Date.new(1994, 5, 10)).first_or_create
+mariah_carey.albums.where(title: 'Merry Christmas', release_date: Date.new(1994, 10, 28)).first_or_create
 
 puts "Seed file ran."
