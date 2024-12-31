@@ -32,6 +32,20 @@ tortoise = Artist.where(name: 'Tortoise').first_or_create
 soundtrack = Artist.where(name: 'Soundtrack').first_or_create
 weezer = Artist.where(name: 'Weezer').first_or_create
 mariah_carey = Artist.where(name: 'Mariah Carey').first_or_create
+led_zeppelin = Artist.where(name: 'Led Zeppelin').first_or_create
+michael_jackson = Artist.where(name: 'Michael Jackson').first_or_create
+john_cougar_mellencamp = Artist.where(name: 'John Cougar Mellencamp').first_or_create
+black_sabbath = Artist.where(name: 'Black Sabbath').first_or_create
+the_beach_boys = Artist.where(name: 'The Beach Boys').first_or_create
+fleetwood_mac = Artist.where(name: 'Fleetwood Mac').first_or_create
+sonny_and_cher = Artist.where(name: 'Sonny & Cher').first_or_create
+johnny_cash = Artist.where(name: 'Johnny Cash').first_or_create
+quiet_riot = Artist.where(name: 'Quiet Riot').first_or_create
+the_police = Artist.where(name: 'The Police').first_or_create
+various_artists = Artist.where(name: 'Various Artists').first_or_create
+van_halen = Artist.where(name: 'Van Halen').first_or_create
+the_doobie_brothers = Artist.where(name: 'The Doobie Brothers').first_or_create
+
 
 puts 'adding albums to artists'
 
@@ -72,5 +86,21 @@ soundtrack.albums.where(title: "Guardians of the Galaxy: Awesome Mix vol. 1", re
 soundtrack.albums.where(title: "Deadpool & Wolverine", release_date: Date.new(2024, 7, 24)).first_or_create
 weezer.albums.where(title: 'Blue Album', release_date: Date.new(1994, 5, 10)).first_or_create
 mariah_carey.albums.where(title: 'Merry Christmas', release_date: Date.new(1994, 10, 28)).first_or_create
+led_zeppelin.albums.where(title: 'Houses of the Holy', release_date: Date.new(1973, 3, 28)).first_or_create
+michael_jackson.albums.where(title: 'Off the Wall', release_date: Date.new(1979, 8, 10)).first_or_create
+john_cougar_mellencamp.albums.where(title: 'Scarecrow', release_date: Date.new(1985, 7, 31)).first_or_create
+john_cougar_mellencamp.albums.where(title: 'American Fool', release_date: Date.new(1982, 4, 12)).first_or_create
+soundtrack.albums.where(title: 'Grease: The Original Soundtrack from the Motion Picture', release_date: Date.new(1978, 4, 14)).first_or_create
+black_sabbath.albums.where(title: 'Paranoid', release_date: Date.new(1970, 9, 18)).first_or_create
+the_beach_boys.albums.where(title: 'Close-Up', release_date: Date.new(1969, 7, 21)).first_or_create
+fleetwood_mac.albums.where(title: 'Rumours', release_date: Date.new(1977, 2, 4)).first_or_create
+sonny_and_cher.albums.where(title: 'Look At Us', release_date: Date.new(1965, 8, 2)).first_or_create
+johnny_cash.albums.where(title: 'At Folsom Prison', release_date: Date.new(1968, 5, 6)).first_or_create
+quiet_riot.albums.where(title: 'Metal Health', release_date: Date.new(1983, 2, 28)).first_or_create
+the_police.albums.where(title: 'Outlandos d\'Amour', release_date: Date.new(1978, 11, 17)).first_or_create
+various_artists.albums.where(title: "NOW That's What I CAll Pride", release_date: Date.new(2022, 5, 24)).first_or_create
+van_halen.albums.where(title: 'Van Halen', release_date: Date.new(1978, 2, 10)).first_or_create
+soundtrack.albums.where(title: 'The Wizard of Oz Original Soundtrack', release_date: Date.new(1962, 1, 1)).first_or_create
+the_doobie_brothers.albums.where(title: 'Best of the Doobies, Vol. 2', release_date: Date.new(1981, 11, 23)).first_or_create
 
 puts "Seed file ran."
