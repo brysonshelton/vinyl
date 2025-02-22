@@ -55,7 +55,7 @@ puts 'adding albums to artists'
 the_anniversary.albums.where(title: 'Designing A Nervous Breakdown', release_date: Date.new(2000, 1, 25)).first_or_create
 the_anniversary.albums.where(title: 'Your Majesty', release_date: Date.new(2022, 1, 22)).first_or_create
 julien_baker.albums.where(title: 'Sprained Ankle', release_date: Date.new(2015, 10, 23)).first_or_create
-boygenius.albums.where(title: 'The Record', release_date: Date.new(2023, 03, 31)).first_or_create
+boygenius.albums.where(title: 'The Record', release_date: '2023-03-31', cover_image_url: "https://experiencevinyl.com/cdn/shop/products/hands-257021.jpg?v=1677214965").first_or_create
 david_bowie.albums.where(title: 'Legacy', release_date: Date.new(2016, 11,11)).first_or_create
 david_bowie.albums.where(title: 'Labyrinth', release_date: Date.new(1986, 6, 23)).first_or_create
 michael_buble.albums.where(title: 'Christmas', release_date: Date.new(2011, 10, 14)).first_or_create
