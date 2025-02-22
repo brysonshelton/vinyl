@@ -45,6 +45,8 @@ the_police = Artist.where(name: 'The Police').first_or_create
 various_artists = Artist.where(name: 'Various Artists').first_or_create
 van_halen = Artist.where(name: 'Van Halen').first_or_create
 the_doobie_brothers = Artist.where(name: 'The Doobie Brothers').first_or_create
+otis_redding = Artist.where(name: 'Otis Redding').first_or_create
+whitney_houston = Artist.where(name: 'Whitney Houston').first_or_create
 
 
 puts 'adding albums to artists'
@@ -102,5 +104,7 @@ various_artists.albums.where(title: "NOW That's What I CAll Pride", release_date
 van_halen.albums.where(title: 'Van Halen', release_date: Date.new(1978, 2, 10)).first_or_create
 soundtrack.albums.where(title: 'The Wizard of Oz Original Soundtrack', release_date: Date.new(1962, 1, 1)).first_or_create
 the_doobie_brothers.albums.where(title: 'Best of the Doobies, Vol. 2', release_date: Date.new(1981, 11, 23)).first_or_create
+otis_redding.albums.where(title: 'Now Playing', release_date: Date.new(2024, 01, 26)).first_or_create
+whitney_houston.albums.where(title: 'Whitney Houston', release_date: Date.new(1985, 02, 14)).first_or_create
 
 puts "Seed file ran."
