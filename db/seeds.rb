@@ -52,7 +52,12 @@ whitney_houston = Artist.where(name: 'Whitney Houston').first_or_create
 puts 'adding albums to artists'
 
 # where Albums
-the_anniversary.albums.where(title: 'Designing A Nervous Breakdown', release_date: '2000-01-25',  cover_image_url: "https://albumartexchange.com/coverart/gallery/th/theanniversary_designinganervousbre_3cep.jpg").first_or_create
+the_anniversary.albums.where(
+  title: 'Designing A Nervous Breakdown',
+  release_date: '2000-01-25',
+  cover_image_url: "https://albumartexchange.com/coverart/gallery/th/theanniversary_designinganervousbre_3cep.jpg"
+).first_or_create
+
 the_anniversary.albums.where(title: 'Your Majesty', release_date: '2022-01-22', cover_image_url: "https://upload.wikimedia.org/wikipedia/en/e/e6/Yourmajesty.jpg").first_or_create
 julien_baker.albums.where(title: 'Sprained Ankle', release_date: Date.new(2015, 10, 23)).first_or_create
 boygenius.albums.where(title: 'The Record', release_date: '2023-03-31', cover_image_url: "https://experiencevinyl.com/cdn/shop/products/hands-257021.jpg?v=1677214965").first_or_create
