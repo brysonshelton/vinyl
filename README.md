@@ -1,24 +1,45 @@
-# README
+# Vinyl App 🎵  
+A web application for managing and exploring my personal vinyl records.  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 🚀 Getting Started  
 
-Things you may want to cover:
+### **Prerequisites**  
+Ensure you have the following installed on your system:  
+- [Ruby](https://www.ruby-lang.org/) (Version 3.0.0 recommended)  
+- [Rails](https://rubyonrails.org/) (If not included in Gemfile)  
+- [Bundler](https://bundler.io/) (`gem install bundler`)  
+- SQLite3  
+- Git  
 
-* Ruby version
+### **📥 Cloning the Repository**  
+To clone the repository, run:  
+```sh
+git clone https://github.com/brysonshelton/vinyl.git
+cd vinyl
+```
+Run the following commands to install the required gems:
+```sh
+bundle install
+```
+Set up the database
+```sh
+rails db:create
+rails db:migrate
+rails db:seed
+```
+Start the rails server with
+```sh
+bin/dev
+```
+Then open: [http://localhost:3000](http://localhost:3000) in your browser
+***
+## 📸 Screenshots  
 
-* System dependencies
+### Artists Page  
+![Artists Page](screenshots/Artists_Page.png)
 
-* Configuration
+### David Bowie Albums  
+![David Bowie Albums](screenshots/David_Bowie.png)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Albums Page
+![Albums Page](screenshots/Albums_Page.png)
