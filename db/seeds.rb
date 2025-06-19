@@ -47,7 +47,7 @@ van_halen = Artist.where(name: 'Van Halen').first_or_create
 the_doobie_brothers = Artist.where(name: 'The Doobie Brothers').first_or_create
 otis_redding = Artist.where(name: 'Otis Redding').first_or_create
 whitney_houston = Artist.where(name: 'Whitney Houston').first_or_create
-
+the_smashing_pumpkins = Artist.where(name: 'The Smashing Pumpkins').first_or_create
 
 puts 'adding albums to artists'
 
@@ -374,6 +374,12 @@ whitney_houston.albums.where(
   title: 'Whitney Houston',
   release_date: '1985-02-14',
   cover_image_url: "https://m.media-amazon.com/images/I/41mZLfm0NrL._AC_UY327_QL65_.jpg"
+).first_or_create
+
+the_smashing_pumpkins.albums.where(
+  title: 'Siamese Dream',
+  release_date: '1993-07-27',
+  cover_image_url: "https://m.media-amazon.com/images/I/51BEd454LGL.jpg"
 ).first_or_create
 
 puts "Seed file ran."
