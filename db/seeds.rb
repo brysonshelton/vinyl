@@ -15,6 +15,7 @@ puts 'adding artists to database'
 the_anniversary = Artist.where(name: 'The Anniversary').first_or_create
 julien_baker = Artist.where(name: 'Julien Baker').first_or_create
 boygenius = Artist.where(name: 'Boygenius').first_or_create
+boyziimen = Artist.where(name: 'Boyz II Men').first_or_create
 david_bowie = Artist.where(name: 'David Bowie').first_or_create
 michael_buble = Artist.where(name: 'Michael Buble').first_or_create
 as_cities_burn = Artist.where(name: 'As Cities Burn').first_or_create
@@ -380,6 +381,12 @@ the_smashing_pumpkins.albums.where(
   title: 'Siamese Dream',
   release_date: '1993-07-27',
   cover_image_url: "https://m.media-amazon.com/images/I/51BEd454LGL.jpg"
+).first_or_create
+
+boyziimen.albums.where(
+  title: 'Christmas Interpretations',
+  release_date: '1993-10-05',
+  cover_image_url: "https://m.media-amazon.com/images/I/615JvsNTFIL._SL1425_.jpg"
 ).first_or_create
 
 puts "Seed file ran."
