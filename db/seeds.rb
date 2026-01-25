@@ -140,7 +140,7 @@ tsac.albums.where(
 dashboard_confessional.albums.where(
   title: 'The Swiss Army Romance',
   release_date: '2000-03-01',
-  cover_image_url: "https://upload.wikimedia.org/wikipedia/en/b/b5/DC-SAR.jpg"
+  cover_image_url: "https://m.media-amazon.com/images/I/71skyFcVHFL._SL1500_.jpg"
 ).first_or_create
 
 dashboard_confessional.albums.where(
