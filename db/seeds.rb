@@ -32,9 +32,6 @@ radiohead = Artist.where(name: 'Radiohead').first_or_create
 tortoise = Artist.where(name: 'Tortoise').first_or_create
 soundtrack = Artist.where(name: 'Soundtrack').first_or_create
 weezer = Artist.where(name: 'Weezer').first_or_create
-mariah_carey = Artist.where(name: 'Mariah Carey').first_or_create
-led_zeppelin = Artist.where(name: 'Led Zeppelin').first_or_create
-michael_jackson = Artist.where(name: 'Michael Jackson').first_or_create
 john_cougar_mellencamp = Artist.where(name: 'John Cougar Mellencamp').first_or_create
 black_sabbath = Artist.where(name: 'Black Sabbath').first_or_create
 the_beach_boys = Artist.where(name: 'The Beach Boys').first_or_create
@@ -263,24 +260,6 @@ weezer.albums.where(
   cover_image_url: "https://m.media-amazon.com/images/I/61uiv0AYlvL._AC_UY327_QL65_.jpg"
 ).first_or_create
 
-mariah_carey.albums.where(
-  title: 'Merry Christmas',
-  release_date: '1994-10-28',
-  cover_image_url: "https://m.media-amazon.com/images/I/71pAYhTQyvL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-led_zeppelin.albums.where(
-  title: 'Houses of the Holy',
-  release_date: '1973-03-28',
-  cover_image_url: "https://m.media-amazon.com/images/I/81kCA78HkUL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-michael_jackson.albums.where(
-  title: 'Off the Wall',
-  release_date: '1979-08-10',
-  cover_image_url: "https://m.media-amazon.com/images/I/81UWfPobkoL._AC_UY327_QL65_.jpg"
-).first_or_create
-
 john_cougar_mellencamp.albums.where(
   title: 'Scarecrow',
   release_date: '1985-07-31',
@@ -387,6 +366,12 @@ boyziimen.albums.where(
   title: 'Christmas Interpretations',
   release_date: '1993-10-05',
   cover_image_url: "https://m.media-amazon.com/images/I/615JvsNTFIL._SL1425_.jpg"
+).first_or_create
+
+soundtrack.albums.where(
+  title: "Scott Pilgrim vs. the World",
+  release_date: '2010-08-13',
+  cover_image_url: "https://upload.wikimedia.org/wikipedia/en/5/59/Scott_Pilgrim_soundtrack_cover.jpg"
 ).first_or_create
 
 puts "Seed file ran."
