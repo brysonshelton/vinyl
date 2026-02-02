@@ -32,19 +32,6 @@ radiohead = Artist.where(name: 'Radiohead').first_or_create
 tortoise = Artist.where(name: 'Tortoise').first_or_create
 soundtrack = Artist.where(name: 'Soundtrack').first_or_create
 weezer = Artist.where(name: 'Weezer').first_or_create
-john_cougar_mellencamp = Artist.where(name: 'John Cougar Mellencamp').first_or_create
-black_sabbath = Artist.where(name: 'Black Sabbath').first_or_create
-the_beach_boys = Artist.where(name: 'The Beach Boys').first_or_create
-fleetwood_mac = Artist.where(name: 'Fleetwood Mac').first_or_create
-sonny_and_cher = Artist.where(name: 'Sonny & Cher').first_or_create
-johnny_cash = Artist.where(name: 'Johnny Cash').first_or_create
-quiet_riot = Artist.where(name: 'Quiet Riot').first_or_create
-the_police = Artist.where(name: 'The Police').first_or_create
-various_artists = Artist.where(name: 'Various Artists').first_or_create
-van_halen = Artist.where(name: 'Van Halen').first_or_create
-the_doobie_brothers = Artist.where(name: 'The Doobie Brothers').first_or_create
-otis_redding = Artist.where(name: 'Otis Redding').first_or_create
-whitney_houston = Artist.where(name: 'Whitney Houston').first_or_create
 the_smashing_pumpkins = Artist.where(name: 'The Smashing Pumpkins').first_or_create
 
 puts 'adding albums to artists'
@@ -260,100 +247,10 @@ weezer.albums.where(
   cover_image_url: "https://m.media-amazon.com/images/I/61uiv0AYlvL._AC_UY327_QL65_.jpg"
 ).first_or_create
 
-john_cougar_mellencamp.albums.where(
-  title: 'Scarecrow',
-  release_date: '1985-07-31',
-  cover_image_url: "https://m.media-amazon.com/images/I/81C3b1fqoaL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-john_cougar_mellencamp.albums.where(
-  title: 'American Fool',
-  release_date: '1982-04-12',
-  cover_image_url: "https://m.media-amazon.com/images/I/71NYOsxTitL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-soundtrack.albums.where(
-  title: 'Grease: The Original Soundtrack from the Motion Picture',
-  release_date: '1978-04-14',
-  cover_image_url: "https://m.media-amazon.com/images/I/71JhrIASJLL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-black_sabbath.albums.where(
-  title: 'Paranoid',
-  release_date: '1970-09-18',
-  cover_image_url: "https://m.media-amazon.com/images/I/71vh+Z2QxPL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-the_beach_boys.albums.where(
-  title: 'Close-Up',
-  release_date: '1969-07-21',
-  cover_image_url: "https://www.karmavinil.com/image_style/product_image/Documents/Products/11197/21219_vin-1.jpg.webp"
-).first_or_create
-
-fleetwood_mac.albums.where(
-  title: 'Rumours',
-  release_date: '1977-02-04',
-  cover_image_url: "https://m.media-amazon.com/images/I/71HWqbh0BLL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-sonny_and_cher.albums.where(
-  title: 'Look At Us',
-  release_date: '1965-08-02',
-  cover_image_url: "https://upload.wikimedia.org/wikipedia/en/e/ec/Sonnycherlookf.jpg"
-).first_or_create
-
-johnny_cash.albums.where(
-  title: 'At Folsom Prison',
-  release_date: '1968-05-06',
-  cover_image_url: "https://m.media-amazon.com/images/I/717dr2iTsRL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-quiet_riot.albums.where(
-  title: 'Metal Health',
-  release_date: '1983-02-28',
-  cover_image_url: "https://m.media-amazon.com/images/I/81iCp3IFQEL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-the_police.albums.where(
-  title: 'Outlandos d\'Amour',
-  release_date: '1978-11-17',
-  cover_image_url: "https://m.media-amazon.com/images/I/81udqX6RBGL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-various_artists.albums.where(
-  title: "NOW That's What I CAll Pride",
-  release_date: '2022-05-24',
-  cover_image_url: "https://m.media-amazon.com/images/I/911pIldY5vL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-van_halen.albums.where(
-  title: 'Van Halen',
-  release_date: '1978-02-10',
-  cover_image_url: "https://m.media-amazon.com/images/I/815Kr1JPuIL._AC_UY327_QL65_.jpg"
-).first_or_create
-
 soundtrack.albums.where(
   title: 'The Wizard of Oz Original Soundtrack',
   release_date: '1962-01-01',
   cover_image_url: "https://m.media-amazon.com/images/I/71wnUMC01dL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-the_doobie_brothers.albums.where(
-  title: 'Best of the Doobies, Vol. 2',
-  release_date: '1981-11-23',
-  cover_image_url: "https://m.media-amazon.com/images/I/71dHvPSkZEL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-otis_redding.albums.where(
-  title: 'Now Playing',
-  release_date: '2024-01-26',
-  cover_image_url: "https://m.media-amazon.com/images/I/810wMekjuRL._AC_UY327_QL65_.jpg"
-).first_or_create
-
-whitney_houston.albums.where(
-  title: 'Whitney Houston',
-  release_date: '1985-02-14',
-  cover_image_url: "https://m.media-amazon.com/images/I/41mZLfm0NrL._AC_UY327_QL65_.jpg"
 ).first_or_create
 
 the_smashing_pumpkins.albums.where(
